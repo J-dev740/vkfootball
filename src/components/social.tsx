@@ -17,6 +17,8 @@ export default function Component(){
                 <li className="flex w-[44px] h-[44px] rounded-full bg-white flex-row items-center justify-center text-[22px]"><FaInstagram/></li>
                 <li className="flex w-[44px] h-[44px] rounded-full bg-white flex-row items-center justify-center text-[22px]"><FaXTwitter/></li>
                 <li className="flex w-[44px] h-[44px] rounded-full bg-white flex-row items-center justify-center text-[22px]"><FaWhatsapp/></li>
+                <li className="flex w-[44px] h-[44px] rounded-full bg-white flex-row items-center justify-center text-[22px]"><TiSocialLinkedin/></li>
+
                 </ul>
             </div>
 

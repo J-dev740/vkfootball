@@ -1,5 +1,5 @@
-import React from "react";
-import { BsArrowRightSquare, BsArrowLeftSquare } from "react-icons/bs";
+// import React from "react";
+// import { BsArrowRightSquare, BsArrowLeftSquare } from "react-icons/bs";
 import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
 
 const NextArrow = ({ onClick }: any) => (

@@ -14,6 +14,7 @@ export default function Component() {
                 {/* insta cards */}
                 <ul className="flex flex-row flex-wrap [1000px]:w-[80%] w-[100%] h-fit gap-[20px]  items-center justify-center  py-[40px] ">
                 {Array(6).fill(0).map((v,idx)=>{
+                    console.log(v);
                     return (
                         <li><Card idx={idx+1}/></li>
                     )
