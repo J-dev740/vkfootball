@@ -79,7 +79,7 @@ const Card=()=>{
             className=" w-[64px] h-[64px] rounded-full bg-cover bg-center"/>
             <div className="flex flex-col items-start justify-start  gap-[2px]  text-white text-[16px] leading-[18px] ">
                 <span className=" font-semibold ">John Smith</span>
-                <span className=" font-normal">Head coach | Royal Stickers FC </span>
+                <span className=" flex gap-1 flex-row items-center justify-center   font-normal">Father of  <span className="font-medium text-white">Robin John</span> <span className=" flex font-medium text-[12px] leading-[21px] bg-black px-4 py-1 ml-2 rounded-xl bg-opacity-30 ">U-9 VK Football Academy player</span></span>
 
             </div>
 

@@ -14,6 +14,8 @@ import Partner from './components/partner'
 import Testimonials from './components/testimonials'
 import Book from './components/book'
 import Insta from './components/insta'
+import Meet from './components/meetcoach'
+import Center from './components/center'
 function App() {
 
   return (
@@ -32,7 +34,12 @@ function App() {
       <AboutUs/>
       {/* our achievements */}
       <Achievements/>
+      {/* meet the coaches */}
+      <Meet/>
+      {/* centers  */}
+      <Center/>
       {/* testimonials */}
+
       <Testimonials/>
       {/* instagram */}
       <Insta/>

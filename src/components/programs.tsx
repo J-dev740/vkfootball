@@ -12,7 +12,7 @@ export default function Component() {
                          lorem ipsum dolor sit amet consectetur.</span>
                 </div>
                 {/* program cards */}
-                <ul className="flex flex-row w-full h-fit  items-center justify-center bg-[#EFEFEF] py-[40px] ">
+                <ul className="flex flex-row w-full h-fit  items-center gap-[20px] justify-center bg-[#EFEFEF] py-[40px] ">
                 {Array(3).fill(0).map(()=>{
                     return (
                         <li><Card/></li>
