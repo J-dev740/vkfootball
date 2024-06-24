@@ -7,7 +7,7 @@ export default function Component(){
           </div>
           {/* partner section */}
           <ul className="flex w-full flex-row items-center justify-between  h-fit py-[64px] bg-[#EFEFEF] ">
-            {partners.map((v,idx)=>{
+            {partners.map((v)=>{
                 return(
                     <Card p={v}/>
                 )
