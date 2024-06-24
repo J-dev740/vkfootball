@@ -2,7 +2,7 @@ export default function Component() {
     return (
         <div 
         id="gallery"
-        className="flex w-full h-fit pb-[80px] flex-row items-center justify-center bg-white">
+        className="flex w-full h-fit pb-[80px] flex-row items-center justify-center bg-white scroll-mt-32">
             <div className="flex w-full flex-col h-fit   items-center   gap-[48px]">
                 {/* header */}
                 <div className="flex  flex-col items-center gap-[8px]">

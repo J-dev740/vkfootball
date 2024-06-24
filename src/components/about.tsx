@@ -2,7 +2,7 @@ export default function Component(){
     return (
         <div 
         id="about"
-        className="flex flex-col items-center w-full h-fit gap-[48px] mb-[80px] ">
+        className="flex flex-col items-center w-full h-fit gap-[48px] mb-[80px] scroll-mt-32 ">
             {/* header */}
           <div className="flex w-fit h-fit text-[40px]  font-medium leading-[46px] italic  text-black">
             About Us

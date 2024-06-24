@@ -3,7 +3,7 @@ export default function Component() {
     return (
         <div
         id='contact'
-         className="flex flex-col items-center w-full h-fit gap-[48px] mb-[80px] ">
+         className="flex flex-col items-center w-full h-fit gap-[48px] mb-[80px] scroll-mt-32">
             {/* about section */}
             <div className="flex w-full flex-row items-center justify-center h-[578px]">
 

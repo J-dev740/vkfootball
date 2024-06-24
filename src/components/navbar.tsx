@@ -5,7 +5,7 @@ export default function Component() {
     const handleScroll = (sectionId:string) => {
         const section = document.getElementById(sectionId);
         if (section) {
-          section.scrollIntoView({ behavior: 'smooth' });
+          section.scrollIntoView({behavior:'smooth', block:'start',inline:'start',});
         }
       };
   return (
