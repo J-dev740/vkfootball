@@ -1,7 +1,7 @@
 
 "use client";
 
-import { Label, TextInput } from "flowbite-react";
+import { Label, } from "flowbite-react";
 import { IoIosArrowForward } from "react-icons/io";
 
 export default function Component() {
