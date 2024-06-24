@@ -11,25 +11,32 @@ export default function Component() {
         <div className="  mb-2 block">
           <Label htmlFor="input-gray" color="black" value="" />
         </div>
-        <TextInput   className="flex rounded-none" id="input-gray" placeholder="Enter Name" required color="black" />
+        {/* <TextInput  className="flex  outline-none" id="input-gray" placeholder="Enter Name" required color="black" /> */}
+        <input placeholder="Enter Name" className="flex w-full bg-white placeholder-gray-600 p-1 focus:border-cyan-500 focus:ring-cyan-500  dark:placeholder-gray-400 dark:focus:border-cyan-500 dark:focus:ring-cyan-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white text-black outline-none  overflow-hidden  border disabled:cursor-not-allowed disabled:opacity-50 "></input>
       </div>
       <div>
         <div className="mb-2 block">
           <Label htmlFor="input-info" color="black" value="" />
         </div>
-        <TextInput id="input-info" placeholder="Enter Date of birth" required color="black" />
+        {/* <TextInput id="input-info" placeholder="Enter Date of birth" required color="black" /> */}
+        <input placeholder="Enter Date of Birth" className="flex w-full bg-white placeholder-gray-600 p-1 focus:border-cyan-500 focus:ring-cyan-500  dark:placeholder-gray-400 dark:focus:border-cyan-500 dark:focus:ring-cyan-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white text-black outline-none  overflow-hidden  border disabled:cursor-not-allowed disabled:opacity-50 "></input>
+
       </div>
       <div>
         <div className="mb-2 block">
           <Label htmlFor="input-success" color="black" value="" />
         </div>
-        <TextInput id="input-success" placeholder="Enter Email" required color="black" />
+        {/* <TextInput id="input-success" placeholder="Enter Email" required color="black" /> */}
+        <input placeholder="Enter Email" className="flex w-full bg-white placeholder-gray-600 p-1 focus:border-cyan-500 focus:ring-cyan-500  dark:placeholder-gray-400 dark:focus:border-cyan-500 dark:focus:ring-cyan-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white text-black outline-none  overflow-hidden  border disabled:cursor-not-allowed disabled:opacity-50 "></input>
+
       </div>
       <div>
         <div className="mb-2 block">
           <Label htmlFor="input-failure" color="black" value="" />
         </div>
-        <TextInput id="input-failure" placeholder="Enter your Mobile no." required color="black" />
+        {/* <TextInput id="input-failure" placeholder="Enter your Mobile no." required color="black" /> */}
+        <input placeholder="Enter Mobile No" className="flex w-full bg-white placeholder-gray-600 p-1 focus:border-cyan-500 focus:ring-cyan-500  dark:placeholder-gray-400 dark:focus:border-cyan-500 dark:focus:ring-cyan-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white text-black outline-none  overflow-hidden  border disabled:cursor-not-allowed disabled:opacity-50 "></input>
+
       </div>
       {/* <div>
         <div className="mb-2 block">
