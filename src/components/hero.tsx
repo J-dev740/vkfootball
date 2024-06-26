@@ -1,4 +1,5 @@
 import { IoIosArrowForward } from "react-icons/io";
+import { handleScroll } from "./navbar";
 
 export default function Component(){
     return(
@@ -20,7 +21,9 @@ export default function Component(){
                 <span className="flex text-[18px] text-wrap leading-[21px] font-normal mb-[24px]">
                 Unlock your athletic potential with our comprehensive training and development programs</span>
                 {/* cta */}
-                <button className="flex bg-[#DD2121] py-[12px] px-[16px] flex-row items-center justify-center">
+                <button
+                onClick={() => handleScroll('contact')}
+                 className="flex bg-[#DD2121] py-[12px] px-[16px] flex-row items-center justify-center">
                     <span className=" flex flex-row items-center gap-1 text-[16px] italic leading-[18px]  font-medium ">Register today <IoIosArrowForward className="flex " /></span>
                 </button>
             </div>

@@ -9,8 +9,8 @@ export default function Component() {
                 <div className="flex  flex-col items-center gap-[8px]">
                     <span className=" flex text-wrap text-black uppercase italic font-medium  text-[40px] leading-[46px]  ">
                         Our Training Programs</span>
-                    <span className="text-[18px] text-wrap  leading-[21px] font-normal text-[#969696] ">
-                         lorem ipsum dolor sit amet consectetur.</span>
+                    {/* <span className="text-[18px] text-wrap  leading-[21px] font-normal text-[#969696] ">
+                         lorem ipsum dolor sit amet consectetur.</span> */}
                 </div>
                 {/* program cards */}
                 <ul className="flex flex-row w-full h-fit  items-center gap-[20px] justify-center bg-[#EFEFEF] py-[40px] ">

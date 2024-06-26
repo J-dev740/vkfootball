@@ -1,13 +1,13 @@
 
 // import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
 import { IoIosArrowForward } from "react-icons/io";
+export const handleScroll = (sectionId:string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({behavior:'smooth', block:'start',inline:'start',});
+    }
+  };
 export default function Component() {
-    const handleScroll = (sectionId:string) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          section.scrollIntoView({behavior:'smooth', block:'start',inline:'start',});
-        }
-      };
   return (
         <div>
             <nav 
@@ -23,9 +23,9 @@ export default function Component() {
                       <li className="flex p-[12px] hover:underline hover:underline-offset-2 hover:cursor-pointer" 
                        onClick={() => handleScroll('home')}>Home</li>
                       <li className="flex p-[12px] hover:underline hover:underline-offset-2 hover:cursor-pointer" 
-                       onClick={() => handleScroll('about')}>About Us</li>
-                      <li className="flex p-[12px] hover:underline hover:underline-offset-2 hover:cursor-pointer" 
                        onClick={() => handleScroll('services')}>Academy Programs</li>
+                      <li className="flex p-[12px] hover:underline hover:underline-offset-2 hover:cursor-pointer" 
+                       onClick={() => handleScroll('about')}>About Us</li>
                       <li className="flex p-[12px] hover:underline hover:underline-offset-2 hover:cursor-pointer" 
                        onClick={() => handleScroll('gallery')}>Gallery</li>
                        <li className="flex flex-row items-start justify-center gap-1 p-[12px] bg-white text-black italic hover:cursor-pointer" 

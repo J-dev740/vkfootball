@@ -4,7 +4,7 @@ export default function Component(){
     return (
         <div className="flex flex-col items-center w-full h-fit gap-[48px] mb-[80px] ">
             {/* header */}
-          <div className="flex w-fit h-fit text-[40px]  font-medium leading-[46px] italic  text-black">
+          <div className="flex w-fit uppercase h-fit text-[40px]  font-medium leading-[46px] italic  text-black">
            Testimonials
           </div>
           {/* about section */}

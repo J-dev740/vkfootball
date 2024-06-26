@@ -10,8 +10,8 @@ export default function Component() {
                 <div className="flex  flex-col items-center gap-[8px]">
                     <span className=" flex text-wrap text-black uppercase italic font-medium  text-[40px] leading-[46px]  ">
                         Instagram</span>
-                    <span className="text-[18px] text-wrap  leading-[21px] font-normal text-[#969696] ">
-                         lorem ipsum dolor sit amet consectetur.</span>
+                    {/* <span className="text-[18px] text-wrap  leading-[21px] font-normal text-[#969696] ">
+                         lorem ipsum dolor sit amet consectetur.</span> */}
                 </div>
                 {/* insta cards */}
                 <ul className=" grid grid-cols-3 w-[90%] xl:w-[59%]  transition-all transform duration-150 ease-in-out h-fit gap-x-[20px] gap-y-[24px] items-center justify-start  ">

@@ -2,6 +2,7 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
+  import './index.css'
 import Navbar from "./components/navbar"
 import Hero from './components/hero'
 import Welcome from './components/welcome'
@@ -19,7 +20,7 @@ import Center from './components/center'
 function App() {
 
   return (
-    <div>
+    <div  className='font-sans'>
       {/* nav */}
       {/* <div className="flex sticky w-full h-full"> */}
       <Navbar/>

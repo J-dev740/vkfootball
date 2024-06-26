@@ -55,7 +55,7 @@ export default function Carousel() {
                     className="flex w-[63%] h-full   bg-cover bg-center bg-no-repeat " />
                     <div className="flex flex-col w-[37%] min-h-[457px] h-full justify-between items-start bg-white p-[40px] gap-[24px] ">
                         {/* desc */}
-                        <span className="flex text-wrap font-normal  text-black [1000px]:text-[16px] text-[12px] leading-[18px] ">
+                        <span className="flex text-wrap font-normal  text-black [1000px]:text-[16px]  leading-[18px] ">
                         Our U13 team recently participated in the Kurla Tournament, 
                         showcasing outstanding football skills throughout the competition.
                         The team won all their group stage matches, advancing confidently to the knockout 
@@ -82,7 +82,7 @@ export default function Carousel() {
                     <div className="flex w-[63%] h-full  bg-[url(/a4.png)]  bg-cover bg-center bg-no-repeat " />
                     <div className="flex flex-col w-[37%] h-full justify-between items-start bg-white p-[40px] gap-[24px] ">
                         {/* desc */}
-                        <span className="flex text-wrap font-normal  text-black text-[14px] leading-[18px] ">
+                        <span className="flex text-wrap font-normal  text-black text-[16px] leading-[18px] ">
                             Celebrating Our U8 Category Success In @grassrootsfootballfiesta Cup Season 3, at TMC Gawand Bagh Turf Thane. ⚽️🙌🏻💯
                             <br/><br/>A Big Thankyou To All Parents Who Supported Us Throughout
                             This League and Made Sure They Come Every Weekends for more than 6 Weeks And Cheer Kids,Motivate Them & Enjoy All the Moments During The Tournament 👏🏻👏🏻👏🏻
@@ -106,7 +106,7 @@ export default function Carousel() {
                     <div className="flex w-[63%] h-full  bg-[url(/a3.png)]  bg-cover bg-center bg-no-repeat " />
                     <div className="flex flex-col w-[37%] h-full justify-between items-start bg-white p-[40px] gap-[24px] ">
                         {/* desc */}
-                        <span className="flex text-wrap font-normal  text-black text-[14px] leading-[18px] ">
+                        <span className="flex text-wrap font-normal  text-black text-[16px] leading-[18px] ">
                             Today Our U9 Team Participated in Soccer Cup 2022,kalwa
                             <br/><br/>
                             Our Team lost in the Semifinals.
