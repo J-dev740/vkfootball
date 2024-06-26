@@ -16,7 +16,7 @@ export default function Component() {
                 {/* insta cards */}
                 <ul className=" grid grid-cols-3 w-[90%] xl:w-[59%]  transition-all transform duration-150 ease-in-out h-fit gap-x-[20px] gap-y-[24px] items-center justify-start  ">
                 {(active?Array(12):Array(6)).fill(0).map((v,idx)=>{
-                    // console.log(v);
+                    console.log(v);
                     return (
                         // <li>
                             <Card idx={idx+1}/>
