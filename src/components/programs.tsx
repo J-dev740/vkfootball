@@ -53,9 +53,9 @@ const Card=()=>{
                 </span>
 
               </div>
-              <div className="flex flex-row items-center justify-end h-[36px] w-full ">
+              {/* <div className="flex flex-row items-center justify-end h-[36px] w-full ">
                 <span className=" flex  w-fit h-full bg-black py-[10px] px-[16px] text-white font-semibold leading-[16px] text-[16px] ">See details</span>
-              </div>
+              </div> */}
 
             </div>
         </div>

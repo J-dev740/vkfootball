@@ -1,4 +1,6 @@
+import {useState} from 'react'
 export default function Component() {
+    const [active,SetActive]=useState(false);
     return (
         <div 
         id="gallery"
@@ -12,9 +14,9 @@ export default function Component() {
                          lorem ipsum dolor sit amet consectetur.</span>
                 </div>
                 {/* insta cards */}
-                <ul className=" grid grid-cols-3 w-[90%] xl:w-[59%]  h-fit gap-x-[20px] gap-y-[24px] items-center justify-start  ">
-                {Array(6).fill(0).map((v,idx)=>{
-                    console.log(v);
+                <ul className=" grid grid-cols-3 w-[90%] xl:w-[59%]  transition-all transform duration-150 ease-in-out h-fit gap-x-[20px] gap-y-[24px] items-center justify-start  ">
+                {(active?Array(12):Array(6)).fill(0).map((v,idx)=>{
+                    // console.log(v);
                     return (
                         // <li>
                             <Card idx={idx+1}/>
@@ -25,7 +27,9 @@ export default function Component() {
                 {/* laodmore and follow */}
                 <div className="w-fit flex flex-row items-start  gap-[16px] ">
                    <button className="px-4 py-[12px] bg-[#DD2121] text-white italic text-[16px] font-medium  leading-[18px] ">Follow us</button>
-                   <button className="px-4 py-[12px] bg-white ring-[1px] ring-black text-black italic text-[16px] font-medium  leading-[18px] ">Load More</button>
+                   <button 
+                   onClick={()=>SetActive(!active)}
+                   className="px-4 py-[12px] bg-white ring-[1px] ring-black text-black italic text-[16px] font-medium  leading-[18px] ">{active?"Show Less":"Load More"}</button>
 
                 </div>
 

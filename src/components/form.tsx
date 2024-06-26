@@ -38,6 +38,14 @@ export default function Component() {
         <input placeholder="Enter Mobile No" className="flex w-full bg-white placeholder-gray-600 p-1 focus:border-cyan-500 focus:ring-cyan-500  dark:placeholder-gray-400 dark:focus:border-cyan-500 dark:focus:ring-cyan-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white text-black outline-none  overflow-hidden  border disabled:cursor-not-allowed disabled:opacity-50 "></input>
 
       </div>
+      <div>
+        <div className="mb-2 block">
+          <Label htmlFor="input-failure" color="black" value="" />
+        </div>
+        {/* <TextInput id="input-failure" placeholder="Enter your Mobile no." required color="black" /> */}
+        <input placeholder="Enter Preferred Coaching Center" className="flex w-full bg-white placeholder-gray-600 p-1 focus:border-cyan-500 focus:ring-cyan-500  dark:placeholder-gray-400 dark:focus:border-cyan-500 dark:focus:ring-cyan-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white text-black outline-none  overflow-hidden  border disabled:cursor-not-allowed disabled:opacity-50 "></input>
+
+      </div>
       {/* <div>
         <div className="mb-2 block">
           <Label htmlFor="input-warning" color="black" value="" />

@@ -12,7 +12,10 @@ export default function Component() {
                     {/* header */}
                     <span className="uppercase text-white  font-medium italic  text-[28px]  leading-[32px] mb-[16px] ">Book your free trial now!</span>
                     {/* desc */}
-                    <span className=" text-white font-normal text-[16px] leading-[18px] mb-[40px] "> Lorem ipsum dolor sit amet consectetur. Donec ultrices sed id malesuada nam. Elementum lacinia elit eget enim dui mauris.</span>
+                    <span className=" text-white font-normal text-[16px] leading-[18px] mb-[40px] ">
+                    Kickstart your football journey with Mumbai's premier academy! Our expert coaches nurture talent at all levels.
+                     Join our winning team and discover your potential on the field.
+                         </span>
                     {/* form */}
                     <Form/>
                     {/* cta */}

@@ -4,7 +4,7 @@ export default function Component(){
         id="about"
         className="flex flex-col items-center w-full h-fit gap-[48px] mb-[80px] scroll-mt-32 ">
             {/* header */}
-          <div className="flex w-fit h-fit text-[40px]  font-medium leading-[46px] italic  text-black">
+          <div className="flex w-fit h-fit text-[40px] uppercase  font-medium leading-[46px] italic  text-black">
             About Us
           </div>
           {/* about section */}
@@ -12,9 +12,11 @@ export default function Component(){
             {/* text */}
             <div className=" flex bg-[#DD2121] w-1/2  text-white h-full text-wrap text-left px-[93px] py-[144px]">
             <span className="flex text-[24px] leading-[28px]  font-normal ">
-            Lorem ipsum dolor sit amet consectetur. Et nam vitae adipiscing arcu mauris in donec gravida. 
-            Id nascetur id ultrices iaculis purus id. Sem urna lorem ultricies dolor sit. Pharetra sed risus malesuada nullam enim.
-             Lorem ipsum dolor sit amet consectetur. Et nam vitae adipiscing arcu mauris in donec gravida.
+            VK Football Academy: Forging India's football future. We transform young talent into pro-ready
+             athletes, offering elite training for ages 5-18. Beyond skills, we build character and create
+              opportunities for advancement in the sport. Whether aiming for the big leagues or personal growth
+              , VK is where football dreams take flight. Join us and be part of India's rising football story.
+               Experience the VK difference - contact us for a free trial today.
 
             </span>
             </div>
