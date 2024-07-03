@@ -1,5 +1,38 @@
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
+import { client } from './client'
+interface data{
+    des:string,
+    img:string
+}
 export default function Component() {
+    const [data, setData] = useState<data[]>([])
+    useEffect(() => {
+        client.getEntries({
+            content_type: 'instagram'
+        }).then((entries) => {
+            let tmp: data[] = []
+            entries.items.forEach((e) => {
+                let entry = JSON.parse(JSON.stringify(e));
+                let itm: data = { img:'', des: '',};
+                if (entry.fields) {
+                    entry=entry.fields;
+                    
+                    // console.log("entry",entry)
+                    itm.img = entry.instaImg.fields.file.url;
+                    itm.des=entry.description;
+                }
+                // console.log(itm)
+                tmp.push(itm);
+            })
+            return tmp;
+        }).then((res: data[]) => {
+            setData(res);
+        })
+
+    }, [])
+    useEffect(() => {
+        console.log('data',data);
+    }, [data])
     const [active,SetActive]=useState(false);
     return (
         <div 
@@ -15,18 +48,20 @@ export default function Component() {
                 </div>
                 {/* insta cards */}
                 <ul className=" grid grid-cols-3 w-[90%] xl:w-[59%]  transition-all transform duration-150 ease-in-out h-fit gap-x-[20px] gap-y-[24px] items-center justify-start  ">
-                {(active?Array(12):Array(6)).fill(0).map((v,idx)=>{
+                {(active?(data):(data.slice(0,6))).map((v,idx)=>{
                     console.log(v);
                     return (
                         // <li>
-                            <Card idx={idx+1}/>
+                            <Card des={v.des} img={v.img}/>
                         // </li>
                     )
                 })}
                 </ul>
                 {/* laodmore and follow */}
                 <div className="w-fit flex flex-row items-start  gap-[16px] ">
+                    <a href='https://www.instagram.com/vk_football_academy?igsh=MTExcHJtY3JhemlleA==' target='blank'>
                    <button className="px-4 py-[12px] bg-[#DD2121] text-white italic text-[16px] font-medium  leading-[18px] ">Follow us</button>
+                   </a>
                    <button 
                    onClick={()=>SetActive(!active)}
                    className="px-4 py-[12px] bg-white ring-[1px] ring-black text-black italic text-[16px] font-medium  leading-[18px] ">{active?"Show Less":"Load More"}</button>
@@ -39,12 +74,12 @@ export default function Component() {
 }
 
 
-const Card=({idx}:{idx:any})=>{
+const Card=({des,img}:{des:string,img:string})=>{
     return (
         <div className=" flex w-[307px] bg-white  h-fit flex-col items-center  gap-[16px] ">
             {/* first div */}
             <div 
-            style={{backgroundImage:`url(/i${(idx%3)+1}.png)`}}
+            style={{backgroundImage:`url(https:${img})`}}
             className="flex flex-row items-end justify-start w-[307px] h-[307px] bg-cover bg-center bg-no-repeat  gap-[8px]">
             </div>
             {/* second div */}
@@ -54,7 +89,7 @@ const Card=({idx}:{idx:any})=>{
                 {/* <span className=" text-black  text-[24px] font-semibold  leading-[28px] ">Formative Programe</span> */}
                 {/* description */}
                 <span className=" flex text-[18px] w-full h-fit  font-normal leading-[21px]  text-wrap text-[#969696]">
-                Two wins down, many more to go! Our U8 age category team is off to a strong start in the leno ...
+                {des}
                 </span>
 
               {/* </div> */}

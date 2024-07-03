@@ -17,8 +17,25 @@ import Book from './components/book'
 import Insta from './components/insta'
 import Meet from './components/meetcoach'
 import Center from './components/center'
+
+
 function App() {
 
+  
+  // client.getEntry('7GEVPKoTuYbFD72w2NFm2x')
+  //   .then((entry) => console.log(entry))
+  //   .catch(console.error)
+  // client.getEntries({
+  //   content_type:'achievements'
+  // }).then(function (entries) {
+  //   // log the title for all the entries that have it
+  //   entries.items.forEach(function (entry) {
+  //     if (entry.fields) {
+  //       console.log((entry.fields));
+  //     }
+  //   });
+  //   console.log('done')
+  // });
   return (
     <div  className='font-sans'>
       {/* nav */}

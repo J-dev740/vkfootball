@@ -1,11 +1,27 @@
 import { IoIosArrowForward } from "react-icons/io";
 import { handleScroll } from "./navbar";
+import { client } from "./client";
+import { useEffect, useState } from "react";
+
 
 export default function Component(){
+    const[img,setImg]=useState('');
+    useEffect(()=>{
+        client.getEntries({
+            content_type:'hero',
+        }).then((entries)=>{
+            entries.items.forEach((e)=>{
+                let entry = JSON.parse(JSON.stringify(e));
+                if(entry.fields){
+                    setImg(entry.fields.img.fields.file.url);
+                }
+            })
+        })
+    })
     return(
         <div 
         id="home"
-        style={{backgroundImage:`url(/hero.png)`}}
+        style={{backgroundImage:`url(https:${img})`}}
         className="bg-cover bg-center ">
         <div 
         
