@@ -95,7 +95,7 @@ export default function Carousel() {
 
 const Card=({idx,coach}:{idx:any,coach:any})=>{
     return (
-        <div className=" flex w-[307px] bg-white  h-fit flex-col items-start  gap-[16px] ">
+        <div key={idx} className=" flex w-[307px] bg-white  h-fit flex-col items-start  gap-[16px] ">
             {/* first div */}
             <div 
             style={{backgroundImage:`url(https://${coach.img})`}}

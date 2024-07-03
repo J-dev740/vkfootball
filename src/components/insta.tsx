@@ -48,7 +48,7 @@ export default function Component() {
                 </div>
                 {/* insta cards */}
                 <ul className=" grid grid-cols-3 w-[90%] xl:w-[59%]  transition-all transform duration-150 ease-in-out h-fit gap-x-[20px] gap-y-[24px] items-center justify-start  ">
-                {(active?(data):(data.slice(0,6))).map((v,idx)=>{
+                {(active?(data):(data.slice(0,6))).map((v)=>{
                     console.log(v);
                     return (
                         // <li>
