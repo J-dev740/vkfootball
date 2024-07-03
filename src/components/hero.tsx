@@ -9,8 +9,8 @@ export default function Component(){
     useEffect(()=>{
         client.getEntries({
             content_type:'hero',
-        }).then((entries)=>{
-            entries.items.forEach((e)=>{
+        }).then((entries:any)=>{
+            entries.items.forEach((e:any)=>{
                 let entry = JSON.parse(JSON.stringify(e));
                 if(entry.fields){
                     setImg(entry.fields.img.fields.file.url);

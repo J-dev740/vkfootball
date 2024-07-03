@@ -9,9 +9,9 @@ export default function Component() {
     useEffect(() => {
         client.getEntries({
             content_type: 'instagram'
-        }).then((entries) => {
+        }).then((entries:any) => {
             let tmp: data[] = []
-            entries.items.forEach((e) => {
+            entries.items.forEach((e:any) => {
                 let entry = JSON.parse(JSON.stringify(e));
                 let itm: data = { img:'', des: '',};
                 if (entry.fields) {
