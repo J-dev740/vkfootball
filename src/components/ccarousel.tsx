@@ -120,21 +120,21 @@ const Card=({idx,coach}:{idx:any,coach:any})=>{
         </div>
     )
 }
-const coachNames=[
-    {
-        name:"James John",
-        pos:"Head Coach"
-    },
-    {
-        name:"Robin George",
-        pos:"Assistant Head Coach"
-    },
-    {
-        name:"David Zack",
-        pos:"Junior Coach"
-    },
-    {
-        name:"Rohan Paul",
-        pos:"Junior Coach"
-    }
-]
+// const coachNames=[
+//     {
+//         name:"James John",
+//         pos:"Head Coach"
+//     },
+//     {
+//         name:"Robin George",
+//         pos:"Assistant Head Coach"
+//     },
+//     {
+//         name:"David Zack",
+//         pos:"Junior Coach"
+//     },
+//     {
+//         name:"Rohan Paul",
+//         pos:"Junior Coach"
+//     }
+// ]
