@@ -1,5 +1,6 @@
 import Form from './form'
 export default function Component() {
+   
     return (
         <div
         id='contact'
